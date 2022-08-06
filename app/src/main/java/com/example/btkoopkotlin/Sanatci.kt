@@ -1,6 +1,6 @@
 package com.example.btkoopkotlin
 
-class Sanatci(isim: String, yas:Int, meslek: String) {
+open class Sanatci(isim: String, yas:Int, meslek: String) {
     var isim: String? = isim
         private set
         get

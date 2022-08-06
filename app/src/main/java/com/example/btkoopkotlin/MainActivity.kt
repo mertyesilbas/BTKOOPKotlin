@@ -19,5 +19,23 @@ class MainActivity : AppCompatActivity() {
         println(ahmet.meslek)
         ahmet.meslek = "Gitarist"
         println(ahmet.meslek)
+
+        println("------INHERITANCE------")
+        val sanatciAhmet = OzelSanatci("Ahmet",21,"Müzisyen")
+        sanatciAhmet.sarkiSoyle()
+
+        println("------POLYMORPHISM------")
+        // Statik Polymoprhism
+        val islemler = Islemler()
+        println(islemler.carpma())
+        println(islemler.carpma(2,3))
+        println(islemler.carpma(2,3,4))
+        // Dinamik Polymorphism
+        val kopek = Kopek()
+        kopek.sesCikar()
+        val kopek2 = Hayvan()
+        kopek2.sesCikar()
+        kopek.kopekFonksiyonu()
+        println("------ABSTRACTION & INTERFACE------")
     }
 }
