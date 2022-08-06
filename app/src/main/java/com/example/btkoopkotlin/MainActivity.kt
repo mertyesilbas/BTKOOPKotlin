@@ -37,5 +37,9 @@ class MainActivity : AppCompatActivity() {
         kopek2.sesCikar()
         kopek.kopekFonksiyonu()
         println("------ABSTRACTION & INTERFACE------")
+        kullanici.insanFonksiyonu()
+        var gitar = Gitar()
+        gitar.marka = "Marka"
+        gitar.elektro = true
     }
 }

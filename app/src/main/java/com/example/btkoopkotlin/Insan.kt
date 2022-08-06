@@ -1,4 +1,7 @@
 package com.example.btkoopkotlin
 
-class Insan {
+abstract class Insan {
+    fun insanFonksiyonu(){
+        println("Ben İnsanım")
+    }
 }
