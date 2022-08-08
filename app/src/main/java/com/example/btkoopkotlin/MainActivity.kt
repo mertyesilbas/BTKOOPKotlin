@@ -36,10 +36,25 @@ class MainActivity : AppCompatActivity() {
         val kopek2 = Hayvan()
         kopek2.sesCikar()
         kopek.kopekFonksiyonu()
+
         println("------ABSTRACTION & INTERFACE------")
         kullanici.insanFonksiyonu()
         var gitar = Gitar()
         gitar.marka = "Marka"
         gitar.elektro = true
+        gitar.bilgi()
+        println(gitar.oda)
+
+        println("------LAMBDA Gösterimleri------")
+        val yazdigimiYazdirLambda = {string: String -> println(string)}
+        yazdigimiYazdirLambda("Test Lambda")
+        val carpmaLambda = {a: Int,b: Int -> a*b}
+        println(carpmaLambda(6,7))
+        val carpmaLambda2 : (Int, Int) -> Int = {a,b->a*b}
+        println(carpmaLambda2(6,9))
+    }
+
+    fun yazdigimiYazdir(string: String){
+        println(string)
     }
 }
